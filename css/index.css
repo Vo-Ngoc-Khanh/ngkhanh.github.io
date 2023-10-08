@@ -1,35 +1,125 @@
-.card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 300px;
-    margin: auto;
-    text-align: center;
-    font-family: arial;
-  }
-  
-  .title {
-    color: grey;
-    font-size: 18px;
-  }
-  
-  button {
-    border: none;
-    outline: 0;
-    display: inline-block;
-    padding: 8px;
-    color: white;
-    background-color: #000;
-    text-align: center;
-    cursor: pointer;
-    width: 100%;
-    font-size: 18px;
-  }
-  
-  a {
-    text-decoration: none;
-    font-size: 22px;
-    color: black;
-  }
-  
-  button:hover, a:hover {
-    opacity: 0.7;
-  }
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+.header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.profile-image {
+  width: 200px;
+  height: 270px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.profile-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.name {
+  font-size: 24px;
+  margin: 10px 0;
+  transition: color 0.3s ease-in-out;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+  transition: color 0.3s ease-in-out;
+}
+
+.education {
+  font-style: italic;
+  margin: 5px 0;
+  transition: color 0.3s ease-in-out;
+}
+
+.description {
+  margin-top: 20px;
+  font-size: 16px;
+  transition: color 0.3s ease-in-out;
+}
+
+.contact {
+  margin-top: 20px;
+}
+
+.contact p {
+  font-size: 16px;
+  margin: 5px 0;
+  transition: color 0.3s ease-in-out;
+}
+
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons a {
+  text-decoration: none;
+  font-size: 24px;
+  color: black;
+  margin: 0 10px;
+  transition: color 0.3s ease-in-out;
+}
+
+.contact-button {
+  border: none;
+  outline: 0;
+  padding: 10px 20px;
+  color: white;
+  background-color: #333;
+  text-align: center;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 5px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Hover effects */
+.profile-image:hover {
+  transform: scale(1.1); /* Khi rê chuột qua ảnh, phóng to ảnh lên 10% */
+}
+
+.name:hover,
+.title:hover,
+.education:hover,
+.description:hover,
+.contact p:hover,
+.social-icons a:hover,
+.contact-button:hover {
+  color: #333; /* Khi rê chuột qua các phần tử văn bản, thay đổi màu sắc thành màu đen */
+}
+
+.contact-button:hover {
+  background-color: #555; /* Khi rê chuột qua nút "Liên hệ", thay đổi màu nền thành màu xám đậm */
+}
